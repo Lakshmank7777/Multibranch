@@ -1,17 +1,17 @@
 pipeline {
-   agent any
-   stages {
-       stage('Build Code') {
+    agent any
+    stages {
+       stage('Test Code') {
            steps {
-         
-               echo "Building Artifact"
-            
+               
+               echo "Test Code"
+               
            }
        }
       stage('Deploy Code') {
           steps {
                
-               echo "Deploying Code"
+               echo "Deploying Code to Tomcat server"
             
           }
       }
